@@ -155,6 +155,7 @@
     .modal-content {
         background: #fff;
         color: #333;
+        max-height: 90vh;
         padding: 20px;
         border-radius: 30px;
         text-align: center;
@@ -164,9 +165,9 @@
         overflow-y: visible; /* Permitir desplazamiento vertical si es necesario */  
     }
 
-    .modal-content h2 {
+     h2 {
         font-size: 1.5rem;
-        margin-bottom: 20px;
+        
     }
 
     .modal-content label {
@@ -210,4 +211,72 @@
 
     .modal-buttons .confirm:hover {
       background: linear-gradient(90deg, #0025c8, #03e2ff);
+    }
+
+    @media (max-width: 390px) { /* iPhone 12 Pro */
+        img {
+            max-width: 100%;
+            height: 60%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            position: absolute;
+            top: 1px;
+        }
+
+        .modal-content, h2 {
+            border-radius: 20px;
+            overflow-x: hidden; /* Para evitar desplazamiento horizontal */
+            overflow-y: visible; /* Permitir desplazamiento vertical si es necesario */  
+        
+        }
+    }
+    
+    @media (max-width: 360px) { /* Galaxy S20 */
+        img {
+            max-width: 100%;
+            height: 65%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            position: absolute;
+            top: 1px;
+        }
+
+        .modal-content, h2 {
+            border-radius: 20px;
+            
+        }
+    
+  
+    }
+    
+    @media (min-width: 810px) and (max-width: 1080px) { /* iPad */
+        img {
+            max-width: 100%;
+            height: 62%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            position: absolute;
+            top: 1px;
+        }
+        .modal-content, h2 {
+            border-radius: 20px;
+        
+        }
+    
+    }
+    
+    /* General para pantallas pequeñas */
+    @media (max-width: 600px) {
+        .container {
+            width: 200%;
+            padding: 20px; /* Reduce padding */
+        }
+    
+        select, input {
+            font-size: 0.9rem; /* Reduce tamaño de texto */
+        }
+    
+        button {
+            font-size: 0.8rem; /* Botones más pequeños */
+        }
     }
