@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/CSS/styles.css">
+  <link rel="icon" type="image/jpg" href="/img/Imagen de WhatsApp 2024-11-15 a las 00.18.24_3a2ffb8a-Photoroom.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Sorteo Lotería</title>
+</head>
+<body>
+
+  <header class="hdr">
+    <div class="logo">
+      <img id="loteria" src="img/Imagen de WhatsApp 2024-11-15 a las 00.18.24_3a2ffb8a-Photoroom.png " alt="">
+    </div>
+  </header>
+    <h1>Lanzamiento en:</h1>
+    <p class="subtext">Únete y participa en nuestros sorteos únicos.</p>
+
+    <div class="countdown">
+
+      <div class="time-box">
+        <span id="days">00</span>
+        <span>Days</span>
+      </div>
+
+      <div class="time-box">
+        <span id="hours">00</span>
+        <span>Hours</span>
+      </div>
+
+      <div class="time-box">
+        <span id="minutes">00</span>
+        <span>Minutes</span>
+      </div>
+
+      <div class="time-box">
+        <span id="seconds">00</span>
+        <span>Seconds</span>
+      </div>
+
+    </div>
+
+
+    <div class="subscribe">
+      <button class="btn sub-btn" id="openModalButton" onclick="document.location='about.html'">Juega en linea aqui</button>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span id="closeModal" class="close">&times;</span>
+        <iframe id="iframe" class="modal-iframe" src=""></iframe>
+      </div>
+    </div>
+
+    <p id="Gana">Resultado sorteo:</p>
+    <div class="circulo">
+      <h2>#</h2>
+      <h2></h2>
+      <h2></h2>
+      <h2></h2>
+    </div>
+  
+  
+
+  </main>
+  
+
+  <canvas id="confetti-canvas"></canvas>
+  <div id="popup" class="popup hidden">
+    <h2>Launch Time!</h2>
+    <p>Thank you for waiting. We are now live!</p>
+    <button class="btn close-btn" onclick="closePopup()">Close</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.18/dist/index.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rifa Navideña</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://sbt.0soft.dev/sheet-best-templates.min.js"></script>
+</head>
+
+<body >
+  <img src="img/christmas-mockup-Photoroom.png" alt="Decoración navideña">
+    <div class="container">
+        <div class="header">
+            <h1>¡Rifa Navideña! 🎄</h1>
+            
+            <p>Selecciona tus números de la suerte y participa para ganar una canasta navideña.</p>
+        </div>
+        <div class="buttons">
+          <button id="registerBtn" disabled>Aceptar y Registrar</button>
+          <button class="btn sub-btn" id="openModalButton" onclick="document.location='index.html'">Cerrar</button>
+        </div>
+
+        <div class="options">
+            <label for="selectionOption">Selecciona una opción:</label>
+            <select id="selectionOption">
+                <option value="" disabled selected>Elige una opción</option>
+                <option value="1">X1 - $20,000 (1 número)</option>
+                <option value="2">X2 - $40,000 (2 números)</option>
+                <option value="3">X3 - $60,000 (3 números)</option>
+                <option value="4">X4 - $80,000 (4 números)</option>
+                <option value="5">X5 - $100,000 (5 números)</option>
+            </select>
+        </div>
+
+        <div class="numbers-container" id="numbersContainer"></div>
+
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2>Registrar tus números</h2>
+            <p id="modalSelectedNumbers"></p>
+            <p id="modalTotalValue"></p>
+            <form id="modalForm">
+                <label for="Nombres">Nombres:</label>
+                <input type="text" id="Nombres" name="Nombres" placeholder="Ingresa tu nombre" required>
+
+                <label for="Apellido">Apellido:</label>
+                <input type="text" id="Apellido" name="Apellido" placeholder="Ingresa tu apellido" required>
+
+                <label for="Email">Email:</label>
+                <input type="email" id="Email" name="Email" placeholder="Ingresa tu correo" required>
+
+                <label for="Ciudad">Ciudad:</label>
+                <input type="text" id="Ciudad" name="Ciudad" placeholder="Ingresa tu ciudad" required>
+
+                <label for="País">País:</label>
+                <input type="text" id="País" name="País" placeholder="Ingresa tu país" required>
+                
+                <div class="input-box">
+                  <label for="Nombre_de_responsable">Nombre de Responsable</label>
+                  <select id="Nombre_de_responsable" required>
+                      <option value="">Seleccione un responsable</option>
+                      <option value="Veronica Ares">Veronica Ares</option>
+                  </select>
+                </div>
+
+                <div class="input-box">
+                  <label for="Celular_de_responsable">Celular de Responsable</label>
+                  <select id="Celular_de_responsable" required>
+                      <option value="">Seleccione un celular</option>
+                      <option value="3178783350">3178783350</option>
+                  </select>
+                </div>
+
+                <div class="input-box">
+                    <label for="Premio">Premio:</label>
+                    <select id="Premio" required>
+                        <option value="">Seleccione un premio</option>
+                        <option value="$2.000.000">$2.000.000</option>
+                    </select>
+                </div>
+
+                <div class="Fin">
+                  <p>Juega con la Lotería de Boyacá</p>
+                  <p>El 21 de diciembre del 2024</p>
+                </div>
+
+                <div class="modal-buttons">
+                    <button class="confirm" type="submit">Confirmar</button>
+                    <button class="cancel" type="button" id="cancelBtn">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="java.js"></script>
+    
+</body>
+
+</html>
+
