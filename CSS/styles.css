@@ -49,7 +49,7 @@ img {
 }
 
 .logo #loteria {
-  width: 28%;
+  width: 400px;
   height: auto;
   display: block;
   margin-left: auto;
@@ -330,16 +330,13 @@ h2:hover {
   align-items: center;  
 }
 .logo #loteria {
-  width: 60%; /* Ajuste del logo */
+  width: 70px; /* Ajuste del logo */
 }
 .logo img {
   width: 80%; /* Ajusta el tamaño del logo */
   height: auto;
 }
 
-.logo img {
-  width: 0%; /* Reducir tamaño de logo */
-}
 }
 
 /* Galaxy S20 (360x800) */
@@ -379,7 +376,7 @@ h1 {
 /* iPad (810x1080) */
 @media screen and (max-width: 810px) {
 .logo #loteria {
-  width: 60%; /* Ajuste del logo */
+  width: 80%; /* Ajuste del logo */
 }
 .cnt {
   padding: 10px;
@@ -396,7 +393,7 @@ h1 {
 
 @media screen and (max-width: 768px) {
 .logo #loteria {
-  width: 60%; /* Ajuste del logo */
+  width: 500px; /* Ajuste del logo */
 }
 
 h1 {
