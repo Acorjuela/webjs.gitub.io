@@ -1,5 +1,5 @@
 // Simulación de números ocupados (desde el servidor)
-const numerosOcupados = ["092", "106" ,"098", "121", "123" , "000"]; // Ejemplo de datos ocupados
+const numerosOcupados = ["092", "106" ,"098", "121", "123" , "000" ,"029"]; // Ejemplo de datos ocupados
 
 // Configuración inicial
 const numbersContainer = document.getElementById('numbersContainer');
