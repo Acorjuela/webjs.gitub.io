@@ -162,9 +162,16 @@
         width: 90%;
         max-width: 400px;
         overflow-x: hidden; /* Para evitar desplazamiento horizontal */
-        overflow-y: visible; /* Permitir desplazamiento vertical si es necesario */  
+        overflow-y: visible; /* Permitir desplazamiento vertical si es necesario */ 
+        margin: 30px auto;
     }
-
+    #modalForm {
+        display: flex;
+        flex-direction: column;
+    }
+    #modalForm input, #modalForm button {
+        margin-bottom: 10px;
+    }
      h2 {
         font-size: 1.5rem;
         
@@ -224,7 +231,8 @@
         }
 
         .modal-content, h2 {
-            border-radius: 20px;
+            border-radius: 10px;
+            margin: 30px auto; 
             overflow-x: hidden; /* Para evitar desplazamiento horizontal */
             overflow-y: visible; /* Permitir desplazamiento vertical si es necesario */  
         
