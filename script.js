@@ -7,7 +7,7 @@
  
  // Temporizador
  const countdown = () => {
-   const launchDate = new Date("Dec 8, 2024 02:10:00").getTime(); // Fecha límite
+   const launchDate = new Date("Nov 8, 2024 00:00:00").getTime(); // Fecha límite
    const now = new Date().getTime();
    const timeLeft = launchDate - now;
  
