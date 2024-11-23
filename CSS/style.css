@@ -97,12 +97,11 @@
     }
 
     .number.occupied {
-        background-image: url('..img/rb_3024.png');
-        color: rgb(255, 254, 254);
+        background-color: orange;
+        color: white;
         cursor: not-allowed;
-        background-size: cover;
-        background-position: center;
     }
+
 
     .number.occupied:hover {
         background: linear-gradient(90deg, #dd001d, #ff3503);
@@ -112,7 +111,9 @@
         color: white;
         font-weight: 700;
     }
-
+    .number.selected:hover {
+        background: linear-gradient(90deg, #e90000, #ff7403);
+    }
     /* Botones */
     .buttons {
         display: flex;
