@@ -96,13 +96,10 @@
         background: linear-gradient(90deg, #0025c8, #03e2ff);
     }
 
-    .number.occupied {   
-        color: rgb(255, 255, 255);
-        cursor: pointer;
-        background: #ff5e01;
-    }
-    .number.occupied:hover{   
-        background: linear-gradient(90deg, #b40000, #ff5e01);
+    .number.occupied {
+        background-color: orange;
+        color: white;
+        cursor: not-allowed;
     }
 
     .number.selected {
