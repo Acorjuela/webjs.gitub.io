@@ -97,7 +97,7 @@
     }
 
     .number.occupied {
-        background-image: url('img/rb_3024.png');
+        background-image: url('..img/rb_3024.png');
         color: rgb(255, 254, 254);
         cursor: not-allowed;
         background-size: cover;
